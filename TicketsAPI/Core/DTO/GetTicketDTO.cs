@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace TicketsAPI.Core.Entities
+namespace TicketsAPI.Core.DTO
 {
-    public class Ticket
+    public class GetTicketDTO
     {
         [Key]
         public long Id { get; set; }
@@ -12,10 +12,6 @@ namespace TicketsAPI.Core.Entities
         public string From { get; set; }
         public string To { get; set; }
         public int Price { get; set; }
-        public DateTime CreatedAt { get; set; }= DateTime.Now;
-        public DateTime UpdatedAt { get; set; }=DateTime.Now;
-        public string ConfidentialComment { get; set; } = "Normal";
-
-
+       
     }
 }
